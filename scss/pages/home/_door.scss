@@ -1,0 +1,258 @@
+#doorWrap {
+    color: #fff;
+    @include responsive(phone) {
+        min-height: 63vh;
+    }
+    .headingText {
+        text-align: center;
+
+        h1 {
+            font-weight: 600;
+            margin-bottom: 50px;
+
+            @include responsive(phone) {
+                font-size: 1.6rem;
+                line-height: 1.3;
+                margin-bottom: 15px;
+            }
+
+            span {
+                font-size: 3.3rem;
+                text-transform: uppercase;
+
+                @include responsive(phone) {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
+
+@include responsive(tab-port-only) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
+@include responsive(big-tab-port-only) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
+
+.selectGender {
+    h1 {
+        font-weight: 900;
+
+        @include responsive(phone) {
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+    }
+
+    .door {
+        position: relative;
+
+        .or_divider {
+            position: absolute;
+            bottom: -20px;
+            width: 98%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.75);
+
+            @include responsive(phone) {
+                display: none;
+            }
+
+            @include responsive(tab-port-only) {
+                left: 48.5%;
+            }
+        }
+    }
+
+    .genderWrap {
+        height: 405px;
+        max-width: 95%;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 0;
+        position: relative;
+        margin-bottom: 0.521vw;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        @include responsive(tab-port-only) {
+            max-width: 100%;
+            height: 500px;
+        }
+
+        @include responsive(phone) {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+
+        .topic {
+            position: absolute;
+            bottom: -11px;
+            display: block;
+            width: 53%;
+            z-index: 1;
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            @include responsive(phone) {
+                position: initial;
+                padding: 25px;
+                font-size: 1.4rem;
+            }
+
+            &::before {
+                content: "";
+                height: 2px;
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: -1;
+                background: #323b76;
+
+                @include responsive(phone) {
+                    display: none;
+                }
+            }
+        }
+
+        img {
+            width: 53%;
+            opacity: 0.6;
+            transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            -moz-transition: all 0.2s ease-in;
+            -ms-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+
+            @include responsive(phone) {
+                display: none;
+            }
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+                transition: all 0.2s ease-in;
+                -webkit-transition: all 0.2s ease-in;
+                -moz-transition: all 0.2s ease-in;
+                -ms-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+            }
+        }
+
+        &.female {
+            border-color: #ce69a2;
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 27px;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 1.14vw;
+                opacity: 0.4;
+                background: linear-gradient(
+                    315deg,
+                    rgba(134, 45, 192, 0.1) 0,
+                    rgba(195, 51, 172, 0.1) 50%,
+                    rgba(255, 57, 154, 0.99) 100%
+                );
+                background-clip: content-box;
+
+                @include responsive(phone) {
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    padding: 4.14vw;
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    opacity: 0.6;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        &.male {
+            border-color: #6bb3dd;
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 27px;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 1.14vw;
+                opacity: 0.4;
+                background: linear-gradient(
+                    315deg,
+                    rgba(81, 156, 240, 0.11) 20%,
+                    rgba(68, 206, 242, 0.1) 50%,
+                    rgba(56, 255, 245, 0.99) 100%
+                );
+                background-clip: content-box;
+
+                @include responsive(phone) {
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    padding: 4.14vw;
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    opacity: 0.6;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

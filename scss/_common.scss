@@ -1,0 +1,23 @@
+.secGap {
+    padding: 50px 0;
+}
+
+.sec_title {
+    margin-bottom: 35px;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.7rem;
+
+        @include responsive(phone) {
+            font-size: 1.4rem;
+        }
+    }
+
+    h2 {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,39 @@
+#footerWrap {
+    color: #fff;
+    margin-top: 40px;
+    .footerLine {
+        border-top: 1px solid #ffffff29;
+        padding: 18px 0;
+        justify-content: space-between;
+        @include responsive(phone) {
+            padding: 18px 15px;
+            text-align: center;
+            justify-content: center;
+        }
+        @include responsive(tab-port-only) {
+            justify-content: center;
+        }
+        .terms {
+            a {
+                color: rgba(255, 255, 255, 0.75);
+                font-size: 12px;
+                &:hover {
+                    color: #3b8fed;
+                }
+                &:not(:last-child) {
+                    &::after {
+                        content: "|";
+                        display: inline-block;
+                        padding: 0 0.8vw;
+                        color: rgba(255, 255, 255, 0.75);
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+    }
+}

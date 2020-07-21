@@ -1,0 +1,10 @@
+#logoWrap {
+    margin: 10px 0;
+
+    img {
+        height: 80px;
+        @include responsive(phone) {
+            height: 70px;
+        }
+    }
+}

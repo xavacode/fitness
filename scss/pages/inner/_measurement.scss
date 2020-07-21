@@ -1,0 +1,70 @@
+.form-control {
+    color: #fff;
+    height: 42px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    &:focus {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+.ftLeft {
+    padding-right: 7px;
+}
+.ftRight {
+    padding-left: 7px;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 13px 10px;
+    background: #79798d;
+    color: #fff;
+}
+
+.food {
+    padding: 0 10px;
+    margin-top: 20px;
+    .foodCov {
+        padding: 0 7px;
+        img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            @include responsive(phone) {
+                height: auto;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.formIcon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    i {
+        color: #6bb3dd;
+    }
+}
