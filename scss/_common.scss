@@ -21,3 +21,16 @@
         margin-bottom: 15px;
     }
 }
+
+.getBtn {
+    border-radius: 25px;
+    margin: 0;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.2rem;
+    border: 0;
+    background-image: linear-gradient(to right, #34c2fa, #9424dc);
+    &:hover {
+        background-image: linear-gradient(to right, #abce28, #d52969);
+    }
+}

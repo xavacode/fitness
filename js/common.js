@@ -1,3 +1,16 @@
+$(function () {
+    $("#datepicker").datepicker({
+        autoclose: true,
+        changeYear: true,
+        changeMonth: true,
+        dateFormat: 'MM-dd',
+        todayHighlight: true,
+    }).datepicker('update', new Date());
+
+});
+
+
+
 (function ($) {
     "use strict";
 

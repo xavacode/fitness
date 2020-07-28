@@ -9,6 +9,7 @@
     padding: 0;
     -webkit-appearance: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html {
     height: 100%;
@@ -196,4 +197,5 @@ h4 {
 @import "pages/inner/physical";
 @import "pages/inner/lifeStyle";
 @import "pages/inner/measurement";
+@import "pages/payment";
 @import "footer/foot";
