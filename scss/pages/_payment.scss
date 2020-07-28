@@ -831,15 +831,15 @@
         }
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         @include responsive(phone) {
-            font-size: 1.1rem;
+            font-size: 0.8rem;
         }
     }
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         @include responsive(phone) {
-            font-size: 0.825rem;
+            font-size: 0.7rem;
         }
     }
 }

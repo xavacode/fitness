@@ -2021,22 +2021,22 @@ body.femaleSide #helpText .helpCover i.fas.fa-question {
 }
 
 #btmInfoWrap h3 {
-  font-size: 1.2rem;
-}
-
-@media only screen and (max-width: 600px) {
-  #btmInfoWrap h3 {
-    font-size: 1.1rem;
-  }
-}
-
-#btmInfoWrap p {
   font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 600px) {
+  #btmInfoWrap h3 {
+    font-size: 0.8rem;
+  }
+}
+
+#btmInfoWrap p {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
   #btmInfoWrap p {
-    font-size: 0.825rem;
+    font-size: 0.7rem;
   }
 }
 
